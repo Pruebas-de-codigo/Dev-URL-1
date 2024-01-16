@@ -1,0 +1,11 @@
+body{
+    align-self: center;
+    max-width: max-content;
+    max-height: max-content;
+    background-color: aliceblue;
+    color: black;
+}
+
+tr{
+    border-color: red;
+}
