@@ -165,17 +165,18 @@ li {
     position: relative;
 }
 
-li:last-child{
-    position: relative;
-    left: 50%;
-}
-
-li button a{
+button a{
     text-decoration: none;
     color: inherit;
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+#next{
+    position: absolute;
+    right: 1rem;
+    font-size: large;
 }
 
 button{
