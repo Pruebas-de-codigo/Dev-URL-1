@@ -1,11 +1,267 @@
 body{
     align-self: center;
-    max-width: max-content;
-    max-height: max-content;
-    background-color: aliceblue;
+    background: url('/views/Images/back-png.png'); 
+    background-attachment: scroll;
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-origin: content-box;
     color: black;
+    font-family: cursive;
 }
 
-tr{
-    border-color: red;
+header{
+    background-color: rgba(105, 233, 233, 0.4);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+}
+
+#home img{
+    width: 50%;
+
+}
+
+h1{
+    font-size: 5dvw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#light-flor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    filter: drop-shadow(0 2px 3px rgb(208, 237, 247));
+    opacity: 0.7;
+
+}
+
+img{
+    width: 18vh;
+    position: relative;
+}
+
+#u{
+    font-size: 8em;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('../Images/nat.jpg');
+    background-position: center;
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 7px 2px black) brightness(1.1);
+}
+
+
+legend{
+    position: relative;
+}
+
+footer{
+    display: flex;
+    background-color: rgba(177, 229, 229, 0.3);
+}
+
+#flor{
+    height: 18vh;
+    left: 20px;
+    top: -10px;
+    border-right: hsl(from blue 44 33 32);
+    border-top-right-radius: 30px;
+    animation: brilla 3s linear infinite;
+}
+
+#ilus{
+    animation: rotar 3s linear infinite;
+    transition: step-start;
+    align-self: center;
+}
+
+div #a{
+    animation: flota 5.5s alternate infinite;
+    filter: opacity(.8);
+}
+div #b{
+    animation: flota 4.4s alternate infinite;
+    filter: opacity(.7);
+}
+div #c{
+    animation: flota 5s alternate infinite;
+    filter: opacity(.9);
+}
+div #d{
+    animation: flota 4.5s alternate infinite;
+    filter: opacity(.9);
+}
+div #e{
+    animation: flota 4.8s alternate infinite;
+    filter: opacity(.9);
+}
+div #f{
+    animation: flota 5.1s alternate infinite;
+    filter: opacity(.9);
+}
+
+.galery{
+    position: relative;
+    height: min-content;
+    left: -25px;
+    top: -15px;
+}
+
+.galery .g6{
+    position: relative;
+    left: 5px;
+    top: -5px;
+}
+.galery .g4{
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+.galery .g3{
+    position: relative;
+    left: -10px;
+    top: -5px;
+}
+
+.galery div{
+    height: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    display: flex;
+    height: 18vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    border: 1px dashed blue;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 10px; /* agregar un margen derecho a cada elemento de la lista */
+    width: 10dvw;
+    height: 4dvw;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+li:last-child{
+    position: relative;
+    left: 50%;
+}
+
+li button a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+button{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+li:hover{
+    position: relative;
+    top: -2px;
+    filter: drop-shadow(0 3px 1px white);
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+        width: 100px;
+        height: 100px;
+    }
+    50%{
+        width: 70px;
+        height: 70px;
+    }
+    
+    100%{
+        transform: rotate(360deg);
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes flota {
+
+    0%{
+        bottom: 5px;
+        left: 0;
+    }
+    25%{
+        bottom: 15px;
+        left: 10px;
+    }
+    50%{
+        bottom: 20px;
+        right: 20px;
+        left: 0;
+    }
+    75%{
+        bottom: 15px;
+        right: 0px;
+        left: -10px;
+    }
+    100%{
+        bottom: 5px;
+        left: 0;
+    }
+}
+
+@keyframes brilla {
+    0%{
+        filter: drop-shadow(1px 2px 3px #83e0f9);
+    }
+    50%{
+        filter: drop-shadow(3px 6px 9px rgba(148, 239, 246, 0.749));
+    }
+    100%{
+        filter: drop-shadow(1px 2px 3px rgb(117, 215, 243)) ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        /* mascara de imagen */
+        background-image: url('https://images.unsplash.com/photo-1503919483171-9ffc1debc390?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 6dvw;
+    }
+    li {
+        margin-right: 10px; /* agregar un margen derecho a cada elemento de la lista */
+        width: 10dvw;
+        height: 5dvw;
+        text-align: center;
+        justify-content: center;
+    }
+
 }
