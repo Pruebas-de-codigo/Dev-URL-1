@@ -1,11 +1,12 @@
 body{
     align-self: center;
-    background: url('/views/Images/back-png.png'); 
+    background: url('../Images/back-png.png'); 
     background-attachment: scroll;
-    background-size:contain; 
+    background-size: 80%; 
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 10% 99%;
     background-origin: content-box;
+    background-color: rgb(225, 239, 252);
     color: black;
     font-family: cursive;
 }
@@ -15,18 +16,21 @@ header{
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 1px solid;
+    border: 1px solid rgba(0, 106, 255, 0.37);
 }
 
 #home img{
-    width: 50%;
-
+    width: 1.7rem;
 }
 
 h1{
-    font-size: 5dvw;
+    font-size: 4dvw;
     font-weight: bold;
     text-align: center;
+}
+
+h3{
+    margin-top: 1rem;
 }
 
 #light-flor {
@@ -35,7 +39,7 @@ h1{
     right: 0;
     width: 30%;
     filter: drop-shadow(0 2px 3px rgb(208, 237, 247));
-    opacity: 0.7;
+    z-index: -1;
 
 }
 
@@ -49,7 +53,7 @@ img{
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url('views/Images/nat.jpg');
+    background-image: url('../Images/nat.jpg');
     background-position: center;
     background-size: contain;
     -webkit-background-clip: text;
@@ -64,7 +68,22 @@ legend{
 
 footer{
     display: flex;
+    justify-content: space-between;
     background-color: rgba(177, 229, 229, 0.3);
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+footer p{
+    /* text-shadow: 0 1px 15px black; */
+    filter: drop-shadow(0 0 1px aliceblue) drop-shadow(0 0 1px aliceblue);
+}
+
+footer section{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 #flor{
@@ -109,7 +128,7 @@ div #f{
 
 .galery{
     position: relative;
-    height: min-content;
+    /* height: min-content; */
     left: -25px;
     top: -15px;
 }
@@ -141,12 +160,13 @@ section{
 
 fieldset{
     display: flex;
-    height: 18vh;
+    height: auto;
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 5px;
     border: 1px dashed blue;
     text-align: center;
+
 }
 
 ul {
@@ -154,15 +174,21 @@ ul {
     padding: 0;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
 li {
-    margin-right: 10px; /* agregar un margen derecho a cada elemento de la lista */
+    /* margin-right: 10px; agregar un margen derecho a cada elemento de la lista */
     width: 10dvw;
     height: 4dvw;
     text-align: center;
     justify-content: center;
     position: relative;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
 }
 
 button a{
@@ -256,7 +282,7 @@ li:hover{
         background-position: center;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 6dvw;
+        font-size: 5dvw;
     }
     li {
         margin-right: 10px; /* agregar un margen derecho a cada elemento de la lista */
