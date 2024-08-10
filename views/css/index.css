@@ -1,18 +1,18 @@
 body{
     align-self: center;
-    background: url('../Images/back-png.png'); 
+    background: url('../Images/back-flower.png'); 
     background-attachment: scroll;
-    background-size: 80%; 
+    background-size: 80% 100%; 
     background-repeat: no-repeat;
-    background-position: 10% 99%;
-    background-origin: content-box;
-    background-color: rgb(225, 239, 252);
+    background-position: top right;
+    /* background-origin: content-box; */
+    background-color: rgb(227, 237, 249);
     color: black;
     font-family: cursive;
 }
 
 header{
-    background-color: rgba(105, 233, 233, 0.4);
+    background-color: rgba(252, 239, 194, 0.416);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -23,8 +23,16 @@ header{
     width: 1.7rem;
 }
 
+p{
+    background-color: #c9eff952;
+}
+
+footer p{
+    background-color: rgba(245, 222, 179, 0);
+}
+
 h1{
-    font-size: 4dvw;
+    font-size: 3dvw;
     font-weight: bold;
     text-align: center;
 }
@@ -48,14 +56,19 @@ img{
     position: relative;
 }
 
-#u{
+nav{
+    display: flex;
+}
+
+#title{
     font-size: 7.5em;
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url('../Images/nat.jpg');
+    background-image: url('../Images/back-nube.png');
     background-position: center;
-    background-size: contain;
+    background-color: #c9eff9;
+    background-size:contain;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 7px 2px rgba(0, 0, 0, 0.763)) brightness(1.1);
@@ -65,7 +78,7 @@ img{
 footer{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(177, 229, 229, 0.3);
+    background-color: rgba(177, 199, 229, 0.3);
     gap: 1rem;
     padding: 0.5rem;
 }
@@ -83,12 +96,14 @@ footer section{
 }
 
 #flor{
-    height: 18vh;
+    width: 19vh;
     left: 20px;
     top: -10px;
-    border-right: hsl(from blue 44 33 32);
-    border-top-right-radius: 30px;
-    animation: brilla 3s linear infinite;
+    /* border-top-right-radius: 20px; */
+    background-color: rgba(255, 237, 196, 0.831);
+    border: 0.24rem ridge rgb(198, 146, 50);
+    /* filter: drop-shadow(0 0 2px al); */
+    /* animation: brilla 3s linear infinite; */
 }
 
 #ilus{
@@ -163,7 +178,6 @@ fieldset{
     border: 2px double rgba(9, 195, 252, 0.432);
     border-radius: 10px;
     text-align: center;
-
 }
 
 ul {
@@ -175,12 +189,12 @@ ul {
 }
 
 li {
-    /* margin-right: 10px; agregar un margen derecho a cada elemento de la lista */
     width: 10dvw;
     height: 4dvw;
     text-align: center;
     justify-content: center;
     position: relative;
+    font-size:x-large;
 }
 
 li a{
@@ -199,6 +213,7 @@ button a{
 #next{
     position: absolute;
     right: 1rem;
+    top: 4rem;
     font-size: large;
     z-index: 1000;
 }
@@ -216,7 +231,7 @@ li:hover{
     filter: drop-shadow(0 3px 1px white);
 }
 
-@keyframes rotar {
+/* @keyframes rotar {
     0%{
         transform: rotate(0deg);
         width: 100px;
@@ -232,7 +247,7 @@ li:hover{
         width: 100px;
         height: 100px;
     }
-}
+} */
 
 @keyframes flota {
 
@@ -260,33 +275,6 @@ li:hover{
     }
 }
 
-@keyframes brilla {
-    0%{
-        filter: drop-shadow(1px 2px 3px #83e0f9);
-    }
-    50%{
-        filter: drop-shadow(3px 6px 9px rgba(148, 239, 246, 0.749));
-    }
-    100%{
-        filter: drop-shadow(1px 2px 3px rgb(117, 215, 243)) ;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h1{
-        /* mascara de imagen */
-        background-image: url('https://images.unsplash.com/photo-1503919483171-9ffc1debc390?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
-        background-position: center;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 5dvw;
-    }
-    li {
-        margin-right: 10px; /* agregar un margen derecho a cada elemento de la lista */
-        width: 10dvw;
-        height: 5dvw;
-        text-align: center;
-        justify-content: center;
-    }
-
+#touch, #touch-2{
+    display: none;
 }

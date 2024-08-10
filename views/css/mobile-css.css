@@ -1,0 +1,67 @@
+
+@media screen and (max-width: 600px) {
+    h1{
+        /* mascara de imagen */
+        background-image: url('https://images.unsplash.com/photo-1503919483171-9ffc1debc390?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 5dvw;
+    }
+    li {
+        margin-right: 10px; /* agregar un margen derecho a cada elemento de la lista */
+        width: 10dvw;
+        height: 5dvw;
+        text-align: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        /* position: relative; */
+    }
+
+    #next{
+        top: 48dvw;
+        left: 0.2rem;
+        font-size: large;
+        z-index: 1000;
+    }
+
+    #touch{
+        display: block;
+        width: 3rem;
+        &:hover{
+            filter: drop-shadow(0 0 2px lightblue);
+            cursor: pointer;
+        }
+    }
+    
+    #touch-2{
+        display: block;
+        width: 2.3rem;
+        position: relative;
+        &:hover{
+            filter: drop-shadow(0 0 2px white) invert();
+            cursor: pointer;
+        }
+        align-self: center;
+    }
+
+    nav{
+        position: absolute;
+        display: none;
+        background-color: rgba(30, 136, 165, 0.811);
+        width: 7rem;
+        height: 100rem;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        justify-content: center;
+    }
+
+}
