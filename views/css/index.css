@@ -19,16 +19,12 @@ header{
     border: 1px solid rgba(0, 106, 255, 0.37);
 }
 
-#home img{
-    width: 1.7rem;
-}
-
 p{
-    background-color: #c9eff952;
+    background-color: #c9eff975;
 }
 
 footer p{
-    background-color: rgba(245, 222, 179, 0);
+    background-color: rgba(24   5, 222, 179, 0);
 }
 
 h1{
@@ -41,16 +37,6 @@ h3{
     margin-top: 1rem;
 }
 
-#light-flor {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    filter: drop-shadow(0 2px 3px rgb(208, 237, 247));
-    z-index: -1;
-
-}
-
 img{
     width: 18vh;
     position: relative;
@@ -58,6 +44,11 @@ img{
 
 nav{
     display: flex;
+    font-weight: bold;
+}
+
+#register{
+    padding-left: 0.7rem;
 }
 
 #title{
@@ -95,7 +86,7 @@ footer section{
     margin: 0;
 }
 
-#flor{
+#picture{
     width: 19vh;
     left: 20px;
     top: -10px;
@@ -106,62 +97,10 @@ footer section{
     /* animation: brilla 3s linear infinite; */
 }
 
-#ilus{
+#palet{
     animation: rotar 3s linear infinite;
     transition: step-start;
     align-self: center;
-}
-
-div #a{
-    animation: flota 5.5s alternate infinite;
-    filter: opacity(.8);
-}
-div #b{
-    animation: flota 4.4s alternate infinite;
-    filter: opacity(.7);
-}
-div #c{
-    animation: flota 5s alternate infinite;
-    filter: opacity(.9);
-}
-div #d{
-    animation: flota 4.5s alternate infinite;
-    filter: opacity(.9);
-}
-div #e{
-    animation: flota 4.8s alternate infinite;
-    filter: opacity(.9);
-}
-div #f{
-    animation: flota 5.1s alternate infinite;
-    filter: opacity(.9);
-}
-
-.galery{
-    position: relative;
-    /* height: min-content; */
-    left: -25px;
-    top: -15px;
-}
-
-.galery .g6{
-    position: relative;
-    left: 5px;
-    top: -5px;
-}
-.galery .g4{
-    position: relative;
-    left: 10px;
-    top: -5px;
-}
-.galery .g3{
-    position: relative;
-    left: -10px;
-    top: -5px;
-}
-
-.galery div{
-    height: 10px;
 }
 
 section{
@@ -185,7 +124,7 @@ ul {
     padding: 0;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 5dvw;  
 }
 
 li {
@@ -194,7 +133,7 @@ li {
     text-align: center;
     justify-content: center;
     position: relative;
-    font-size:x-large;
+    font-size:large;
 }
 
 li a{
@@ -211,11 +150,11 @@ button a{
 }
 
 #next{
-    position: absolute;
-    right: 1rem;
-    top: 4rem;
-    font-size: large;
     z-index: 1000;
+    position: absolute;
+    right: -50dvw;
+    font-size: xx-large;
+    bottom: -0.5rem;
 }
 
 button{

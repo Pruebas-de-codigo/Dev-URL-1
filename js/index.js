@@ -5,9 +5,6 @@ const nav = document.querySelector("nav");
     t.addEventListener('click', function() {
         nav.style.display = "flex";
         t.style.opacity = 0;
-        window.addEventListener('scroll', function(event) {
-            event.preventDefault();
-          });
     });
     
     t2.addEventListener('click', function() {

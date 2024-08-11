@@ -1,0 +1,85 @@
+div{
+    position: relative;
+    top: 5px;
+    box-shadow: 0 0 0 rgb(211, 233, 240);
+}
+
+#aaa{
+    background-color: rgb(83, 250, 250); height: 5rem; width: 5rem;
+     border-radius: 50%;
+     transform: rotateX(-30deg);
+     box-shadow: 0 0.2rem 0 rgb(23, 218, 218);
+    &:active{
+        top: 0.6rem;
+        transition: position 2s linear;
+    }
+    left: 1rem;
+    text-align: center;
+    /* align-content: ; */
+    font-size: xxx-large;
+    cursor: pointer;
+}
+
+#bbb{
+    left: 1rem;
+    top: -4rem;
+    z-index: -1;
+    background-color: rgb(23, 218, 218);
+     height: 5rem;
+      width: 5rem;
+     border-radius: 50%;
+     transform: rotateX(-30deg);
+}
+
+#c{
+    left: 10rem;
+    background-color: rgb(83, 250, 97); height: 5rem; width: 5rem;
+    border-radius: 50%;
+    transform: rotateX(-30deg);
+    box-shadow: 0 0.3rem 0 rgb(5, 175, 56);
+    &:active{
+        top: 0.6rem;
+        transition: position 2s linear;
+    }
+    text-align: center;
+    /* align-content: ; */
+    font-size: xxx-large;
+    cursor: pointer;
+}
+
+#d{
+    left: 10rem;
+    top: -4rem;
+    z-index: -1;
+    background-color: rgb(5, 175, 56);
+     height: 5rem;
+      width: 5rem;
+     border-radius: 50%;
+     transform: rotateX(-30deg);
+}
+#f{
+    left: 1rem;
+    background-color: rgb(250, 83, 183); height: 5rem; width: 5rem;
+     border-radius: 50%;
+     transform: rotateX(-30deg);
+     box-shadow: 0 0.3rem 0 rgb(176, 7, 80);
+    &:active{
+        top: 0.6rem;
+        transition: position 2s linear;
+    }
+    text-align: center;
+    /* align-content: ; */
+    font-size: xxx-large;
+    cursor: pointer;
+}
+
+#e{
+    left: 1rem;
+    top: -4rem;
+    z-index: -1;
+    background-color: rgb(176, 7, 80);
+     height: 5rem;
+      width: 5rem;
+     border-radius: 50%;
+     transform: rotateX(-30deg);
+}
