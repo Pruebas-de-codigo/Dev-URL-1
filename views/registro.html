@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="views/Images/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./Images/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/registro.css">
     <title> DEV-URL-1 </title>
 </head>
 <body>
-    <form >
+    <form action="https://formsubmit.co/6d4768b2961225e8a309425c12d90cb8" method="POST">
         <label for="name">Nombre del cliente</label>
-        <input type="text" class="input-place">
+        <input type="text" nam="name" required>
         <br>
-        <label for="email" class="input-place">Email del contacto</label>
-        <input type="email">
+        <label for="email" >Email del contacto</label>
+        <input type="email" nam="email" required>
         <br>
-        <label for="phone" class="input-place">Número del contacto</label>
-        <input type="tel">
+        <label for="phone" >Número del contacto</label>
+        <input type="tel" nam="cell" required>
         <br>
-        <button action="h" id="send-button">
+        <input type="hidden" name="_next" value="https://pruebas-de-codigo.github.io/Dev-URL-1/index.html">
+        <input type="hidden" name="_autoresponse" value="Bienvenid@ a mi mundo..">
+        <button action="submit" id="send-button">
             Enviar
         </button>
     </form>
