@@ -21,6 +21,10 @@ header{
 
 p{
     background-color: #c9eff975;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+
 }
 
 footer p{
@@ -35,11 +39,19 @@ h1{
 
 h3{
     margin-top: 1rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+
 }
 
 img{
     width: 18vh;
     position: relative;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+
 }
 
 nav{
@@ -67,6 +79,9 @@ nav{
 
 
 footer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
     display: flex;
     justify-content: space-between;
     background-color: rgba(177, 199, 229, 0.3);
@@ -170,24 +185,6 @@ li:hover{
     filter: drop-shadow(0 3px 1px white);
 }
 
-/* @keyframes rotar {
-    0%{
-        transform: rotate(0deg);
-        width: 100px;
-        height: 100px;
-    }
-    50%{
-        width: 70px;
-        height: 70px;
-    }
-    
-    100%{
-        transform: rotate(360deg);
-        width: 100px;
-        height: 100px;
-    }
-} */
-
 @keyframes flota {
 
     0%{
@@ -216,4 +213,15 @@ li:hover{
 
 #touch, #touch-2{
     display: none;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
